@@ -1,3 +1,4 @@
+using ECommerce.ErrorsHandling;
 using Microsoft.EntityFrameworkCore;
 using ProductCatalog.AutoMapper;
 using ProductCatalog.BLL.Services;
@@ -43,6 +44,8 @@ namespace ProductCatalog
             }
 
             app.UseHttpsRedirection();
+            app.UseMiddleware<ExceptionMiddleware>();
+
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

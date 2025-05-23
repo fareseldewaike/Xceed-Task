@@ -1,0 +1,33 @@
+﻿@model ProductCatalog.DTOs.ProductToAddViewModel
+
+@Html.AntiForgeryToken()
+
+<div class="form-group">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="Price"></label>
+    <input asp-for="Price" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="StartDate"></label>
+    <input asp-for="StartDate" type="date" class="form-control" />
+    <span asp-validation-for="StartDate" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="DurationInDays"></label>
+    <input asp-for="DurationInDays" class="form-control" />
+    <span asp-validation-for="DurationInDays" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="CategoryId">Category</label>
+    <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control"></select>
+    <span asp-validation-for="CategoryId" class="text-danger"></span>
+</div>

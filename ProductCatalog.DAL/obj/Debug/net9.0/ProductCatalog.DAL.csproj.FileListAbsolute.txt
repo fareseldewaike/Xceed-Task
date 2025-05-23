@@ -1,0 +1,14 @@
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\bin\Debug\net9.0\ProductCatalog.DAL.deps.json
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\bin\Debug\net9.0\ProductCatalog.DAL.runtimeconfig.json
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\bin\Debug\net9.0\ProductCatalog.DAL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\bin\Debug\net9.0\ProductCatalog.DAL.pdb
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.AssemblyInfo.cs
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\refint\ProductCatalog.DAL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.pdb
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.genruntimeconfig.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ref\ProductCatalog.DAL.dll

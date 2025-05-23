@@ -1,0 +1,14 @@
+﻿@using ProductCatalog.DAL.Entities
+@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "All Products";
+    ViewBag.ShowActions = true;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<a href="@Url.Action("AddProduct")" class="btn btn-success mb-3">Add New Product</a>
+
+@Html.Partial("_ProductFilterPartial", "FilterAllByCategory")
+
+@Html.Partial("_ProductTablePartial", Model)

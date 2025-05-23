@@ -1,0 +1,54 @@
+﻿@using ProductCatalog.DAL.Entities
+@model IEnumerable<Product>
+
+@{
+    bool showAdminActions = ViewBag.ShowActions ?? false;
+}
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Start Date</th>
+            <th>Duration (Days)</th>
+            <th>Category</th>
+            @if (showAdminActions)
+            {
+                <th>Created By</th>
+                <th>Creation Date</th>
+            }
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.StartDate.ToShortDateString()</td>
+                <td>@product.DurationInDays</td>
+                <td>@product.Category?.Name</td>
+
+                @if (showAdminActions)
+                {
+                    <td>@product.CreatedByUserId</td>
+                    <td>@product.CreationDate.ToShortDateString()</td>
+                }
+
+                <td>
+                    <a href="@Url.Action("GetProductById", new { id = product.Id })" class="btn btn-info">Details</a>
+                    @if (showAdminActions)
+                    {
+                        <a href="@Url.Action("UpdateProduct", new { id = product.Id })" class="btn btn-warning">Edit</a>
+                        <form asp-action="DeleteProduct" method="post" style="display:inline;" onsubmit="return confirm('Are you sure?');">
+                            <input type="hidden" name="id" value="@product.Id" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

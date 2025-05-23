@@ -1,0 +1,12 @@
+﻿@using ProductCatalog.DAL.Entities
+@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Offered Products";
+    ViewBag.ShowActions = false;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@Html.Partial("_ProductFilterPartial", "FilterOfferedByCategory")
+
+@Html.Partial("_ProductTablePartial", Model)

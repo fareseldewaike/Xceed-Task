@@ -1,0 +1,11 @@
+﻿@model ProductCatalog.DTOs.ProductToAddViewModel
+@{
+    ViewData["Title"] = "Update Product";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="UpdateProduct" method="post">
+    @Html.Partial("_ProductFormPartial")
+    <button type="submit" class="btn btn-primary mt-3">Edit</button>
+</form>

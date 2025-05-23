@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\bin\Debug\net9.0\ProductCatalog.BLL.deps.json
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\bin\Debug\net9.0\ProductCatalog.BLL.runtimeconfig.json
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\bin\Debug\net9.0\ProductCatalog.BLL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\bin\Debug\net9.0\ProductCatalog.BLL.pdb
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.AssemblyInfo.cs
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\refint\ProductCatalog.BLL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.pdb
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.genruntimeconfig.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ref\ProductCatalog.BLL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\bin\Debug\net9.0\ProductCatalog.DAL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\bin\Debug\net9.0\ProductCatalog.DAL.pdb
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductCatalog.BLL.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.BLL\obj\Debug\net9.0\ProductC.44CB3190.Up2Date

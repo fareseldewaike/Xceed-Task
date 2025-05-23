@@ -1,0 +1,45 @@
+﻿@model ProductCatalog.DTOs.ProductToAddViewModel
+@{
+    ViewData["Title"] = "Add Product";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="AddProduct" method="post" id="productForm">
+    @Html.Partial("_ProductFormPartial")
+    <button type="submit" class="btn btn-primary mt-3">Add</button>
+</form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<script>
+        $(document).ready(function () {
+        $('#productForm').submit(function (e) {
+            e.preventDefault();
+
+            if (!$(this).valid()) return;
+
+            const token = $('input[name="__RequestVerificationToken"]').val();
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("AddProduct")',
+
+                // Serializes all the form data (inputs, selects) into a URL-encoded string.
+                data: $(this).serialize(),
+                headers: {
+                    'RequestVerificationToken': token
+                },
+                // success: function (response) {
+                //     alert("Product added successfully!");
+                // },
+                // error: function (xhr) {
+                //     alert("Error occurred: " + xhr.responseText);
+                // }
+            });
+        });
+    });
+
+</script>

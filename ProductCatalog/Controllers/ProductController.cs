@@ -26,30 +26,50 @@ namespace ProductCatalog.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllProducts()
         {
-            await AllCategoriesAsync();
-            var products = await _productService.GetAllProductsAsync();
-
-            return View("GetAllProducts", products);
+            try
+            {
+                await AllCategoriesAsync();
+                var products = await _productService.GetAllProductsAsync();
+                return View("GetAllProducts", products);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, new ApiResponse(500, "error occurred while retrieving products"));
+            }
         }
             [HttpGet]
         public async Task<IActionResult> GetAllProductsWithStillInOffer()
         {
-            await  AllCategoriesAsync();
-            var products = await _productService.GetAllProductsWithStillInOfferAsync();
-            if(products == null)
+            try
             {
-                return NotFound(new ApiResponse(400));
+                await AllCategoriesAsync();
+                var products = await _productService.GetAllProductsWithStillInOfferAsync();
+                if (products == null)
+                {
+                    return NotFound(new ApiResponse(400));
+                }
+                return View(products);
             }
-            return View(products);
+            catch (Exception)
+            {
+                return StatusCode(500, new ApiResponse(500, "error while retrieving products in offer"));
+            }
         }
         public async Task<IActionResult> GetProductById(int id)
         {
-            var product = await _productService.GetProductByIdAsync(id);
-            if (product == null)
+            try
             {
-                return NotFound(new ApiResponse(400));
+                var product = await _productService.GetProductByIdAsync(id);
+                if (product == null)
+                {
+                    return NotFound(new ApiResponse(400));
+                }
+                return View(product);
             }
-            return View(product);
+            catch (Exception)
+            {
+                return StatusCode(500, new ApiResponse(500, "Error while retrieving product."));
+            }
         }
 
 
@@ -106,40 +126,74 @@ namespace ProductCatalog.Controllers
         {
             if (ModelState.IsValid)
             {
-                 var existingProduct = await _productService.GetProductByIdAsync(id);
-                if (existingProduct == null) return NotFound(new ApiResponse(400));
-                existingProduct.Name = productdto.Name;
-                existingProduct.Price = productdto.Price;
-                existingProduct.StartDate = productdto.StartDate;
-                existingProduct.DurationInDays = productdto.DurationInDays;
-                existingProduct.CategoryId = productdto.CategoryId;
-                await _productService.UpdateProductAsync(existingProduct);
-                return RedirectToAction("GetAllProducts");
+                try
+                {
+                    var existingProduct = await _productService.GetProductByIdAsync(id);
+                    if (existingProduct == null)
+                        return NotFound(new ApiResponse(400));
+
+                    existingProduct.Name = productdto.Name;
+                    existingProduct.Price = productdto.Price;
+                    existingProduct.StartDate = productdto.StartDate;
+                    existingProduct.DurationInDays = productdto.DurationInDays;
+                    existingProduct.CategoryId = productdto.CategoryId;
+
+                    await _productService.UpdateProductAsync(existingProduct);
+                    return RedirectToAction("GetAllProducts");
+                }
+                catch (Exception)
+                {
+                    ModelState.AddModelError("", "Error while updating the product.");
+                }
             }
+            await AllCategoriesAsync();
             return View(productdto);
         }
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            var product = await _productService.GetProductByIdAsync(id);
-            if (product == null) return NotFound(new ApiResponse(400));
-            await _productService.DeleteProductAsync(id);
-            return RedirectToAction("GetAllProducts");
+            try
+            {
+                var product = await _productService.GetProductByIdAsync(id);
+                if (product == null)
+                    return NotFound(new ApiResponse(400));
+
+                await _productService.DeleteProductAsync(id);
+                return RedirectToAction("GetAllProducts");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, new ApiResponse(500, "Error while deleting the product."));
+            }
         }
         [HttpGet]
         public async Task<IActionResult> FilterAllByCategory(int categoryid)
         {
-            await AllCategoriesAsync();
-            var products = await _productService.GetProductsByCategoryAsync(categoryid);
-            return View("GetAllProducts", products);  
+            try
+            {
+                await AllCategoriesAsync();
+                var products = await _productService.GetProductsByCategoryAsync(categoryid);
+                return View("GetAllProducts", products);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, new ApiResponse(500, "Error while filtering products by category."));
+            }
         }
         [HttpGet]
         public async Task<IActionResult> FilterOfferedByCategory(int categoryid)
         {
-            await AllCategoriesAsync();
-            var products = await _productService.GetProductsByCategoryStillInOfferAsync(categoryid);
-            return View("GetAllProductsWithStillInOffer", products);
+            try
+            {
+                await AllCategoriesAsync();
+                var products = await _productService.GetProductsByCategoryStillInOfferAsync(categoryid);
+                return View("GetAllProductsWithStillInOffer", products);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, new ApiResponse(500, "Error while filtering offered products by category."));
+            }
         }
 
         private async Task AllCategoriesAsync()

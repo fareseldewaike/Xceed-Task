@@ -244,3 +244,4 @@ C:\Users\USER\source\repos\ProductCatalog\ProductCatalog\obj\Debug\net9.0\Produc
 C:\Users\USER\source\repos\ProductCatalog\ProductCatalog\obj\Debug\net9.0\ref\ProductCatalog.dll
 C:\Users\USER\source\repos\ProductCatalog\ProductCatalog\bin\Debug\net9.0\Castle.Core.dll
 C:\Users\USER\source\repos\ProductCatalog\ProductCatalog\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog\obj\Debug\net9.0\ProductCatalog.sourcelink.json

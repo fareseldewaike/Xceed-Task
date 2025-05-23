@@ -29,43 +29,59 @@ namespace ProductCatalog.Controllers
                 return View(model);
             }
 
-             var user = await _userManager.FindByEmailAsync(model.Email);
-
-            if (user == null)
+            try
             {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+
+                if (user == null)
+                {
+                    ModelState.AddModelError("", "Invalid login attempt.");
+                    return View(model);
+                }
+
+                var result = await _signInManager.PasswordSignInAsync(
+                    user.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
+
+                if (result.Succeeded)
+                {
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    if (roles.Contains("Admin"))
+                    {
+                        return RedirectToAction("GetAllProducts", "Product");
+                    }
+                    else if (roles.Contains("Customer"))
+                    {
+                        return RedirectToAction("GetAllProductsWithStillInOffer", "Product");
+                    }
+
+                    return RedirectToAction("Index", "Home");
+                }
+
                 ModelState.AddModelError("", "Invalid login attempt.");
                 return View(model);
             }
-
-             var result = await _signInManager.PasswordSignInAsync(
-                user.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
-
-            if (result.Succeeded)
+            catch (Exception)
             {
-                 var roles = await _userManager.GetRolesAsync(user);
-
-                if (roles.Contains("Admin"))
-                {
-                    return RedirectToAction("GetAllProducts", "Product");
-                }
-                else if (roles.Contains("Customer"))
-                {
-                    return RedirectToAction("GetAllProductsWithStillInOffer", "Product");
-                }
-
-                 return RedirectToAction("Index", "Home");
+                ModelState.AddModelError("", "An error occurred while processing your login.");
+                return View(model);
             }
-
-            ModelState.AddModelError("", "Invalid login attempt.");
-            return View(model);
+        
         }
 
 
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            await _signInManager.SignOutAsync();
-            return RedirectToAction("Login", "Account");
+            try
+            {
+                await _signInManager.SignOutAsync();
+                return RedirectToAction("Login", "Account");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error occurred while logging out.");
+            }
         }
     }
 }

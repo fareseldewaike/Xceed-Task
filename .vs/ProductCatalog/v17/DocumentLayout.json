@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|c:\\users\\user\\source\\repos\\productcatalog\\productcatalog\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|c:\\users\\user\\source\\repos\\productcatalog\\productcatalog\\views\\shared\\_productfilterpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\views\\shared\\_productfilterpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -111,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\errorshandling\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|c:\\users\\user\\source\\repos\\productcatalog\\productcatalog\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88ED59C0-7509-47F3-8F08-EC89B39E79C1}|ProductCatalog\\ProductCatalog.csproj|solutionrelative:productcatalog\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B549A25A-D66C-4748-A41C-E0519F958949}|ProductCatalog.DAL\\ProductCatalog.DAL.csproj|c:\\users\\user\\source\\repos\\productcatalog\\productcatalog.dal\\interfaces\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B549A25A-D66C-4748-A41C-E0519F958949}|ProductCatalog.DAL\\ProductCatalog.DAL.csproj|solutionrelative:productcatalog.dal\\interfaces\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -146,11 +146,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 30,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Program.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\Program.cs",
@@ -163,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\Controllers\\ProductController.cs",
@@ -172,21 +172,7 @@
               "ViewState": "AgIAALIAAAAAAAAAAAAAAMEAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T17:16:22.576Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ProductCatalog\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ProductCatalog\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T22:11:49.312Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -194,7 +180,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProductCatalog\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProductCatalog\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T22:11:49.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -206,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "_ProductTablePartial.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Shared\\_ProductTablePartial.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Shared\\_ProductTablePartial.cshtml",
@@ -218,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_ProductFilterPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Shared\\_ProductFilterPartial.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Shared\\_ProductFilterPartial.cshtml",
@@ -231,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "_ProductFormPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Shared\\_ProductFormPartial.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Shared\\_ProductFormPartial.cshtml",
@@ -243,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GetAllProductsWithStillInOffer.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Product\\GetAllProductsWithStillInOffer.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Product\\GetAllProductsWithStillInOffer.cshtml",
@@ -251,12 +249,11 @@
               "RelativeToolTip": "ProductCatalog\\Views\\Product\\GetAllProductsWithStillInOffer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-23T09:48:59.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T09:48:59.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UpdateProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Product\\UpdateProduct.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Product\\UpdateProduct.cshtml",
@@ -268,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AddProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Product\\AddProduct.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Product\\AddProduct.cshtml",
@@ -280,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "GetProductById.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Product\\GetProductById.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Product\\GetProductById.cshtml",
@@ -292,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GetAllProducts.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Product\\GetAllProducts.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Product\\GetAllProducts.cshtml",
@@ -300,12 +297,11 @@
               "RelativeToolTip": "ProductCatalog\\Views\\Product\\GetAllProducts.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-23T08:12:15.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T08:12:15.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\_ViewStart.cshtml",
@@ -317,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "login.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Views\\Account\\login.cshtml",
               "RelativeDocumentMoniker": "ProductCatalog\\Views\\Account\\login.cshtml",
@@ -329,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\ViewModels\\LoginViewModel.cs",
@@ -341,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\Controllers\\AccountController.cs",
@@ -353,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ErrorsHandling\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\ErrorsHandling\\ExceptionMiddleware.cs",
@@ -365,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ErrorsHandling\\ApiResponse.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\ErrorsHandling\\ApiResponse.cs",
@@ -377,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ApiException.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ErrorsHandling\\ApiException.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\ErrorsHandling\\ApiException.cs",
@@ -389,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\AutoMapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\AutoMapper\\MappingProfile.cs",
@@ -401,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ProductToAddViewModel.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ViewModels\\ProductToAddViewModel.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\ViewModels\\ProductToAddViewModel.cs",
@@ -413,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog.BLL\\Services\\IProductService.cs",
               "RelativeDocumentMoniker": "ProductCatalog.BLL\\Services\\IProductService.cs",
@@ -421,12 +417,11 @@
               "RelativeToolTip": "ProductCatalog.BLL\\Services\\IProductService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T17:17:19.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T17:17:19.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog.BLL\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "ProductCatalog.BLL\\Services\\ProductService.cs",
@@ -462,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "GenericRepo.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog.DAL\\Repos\\GenericRepo.cs",
               "RelativeDocumentMoniker": "ProductCatalog.DAL\\Repos\\GenericRepo.cs",
@@ -486,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ApplicationDbSeeder.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\Seed\\ApplicationDbSeeder.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\Seed\\ApplicationDbSeeder.cs",
@@ -510,15 +505,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 0,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ServiceRegistration\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "ProductCatalog\\ServiceRegistration\\ServiceRegistration.cs",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog\\ServiceRegistration\\ServiceRegistration.cs",
               "RelativeToolTip": "ProductCatalog\\ServiceRegistration\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAsAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T15:53:16.195Z"
+              "WhenOpened": "2025-05-22T15:53:16.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -546,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog.DAL\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "ProductCatalog.DAL\\Entities\\Category.cs",
@@ -554,12 +550,11 @@
               "RelativeToolTip": "ProductCatalog.DAL\\Entities\\Category.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T15:33:18.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T15:33:18.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\ProductCatalog\\ProductCatalog.DAL\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "ProductCatalog.DAL\\Entities\\Product.cs",

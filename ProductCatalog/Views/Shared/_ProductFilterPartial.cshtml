@@ -1,17 +1,21 @@
 ﻿@model string
 @{
     var actionName = Model ?? "FilterAllByCategory"; 
+    string selectedCategory = Context.Request.Query["categoryId"];
+
 }
 
 @if (ViewBag.Categories != null)
 {
     <form asp-action="@actionName" method="get" class="form-inline float-right">
         <select name="categoryId" class="form-control" onchange="this.form.submit()">
-            <option value="">-- Select Category --</option>
+            <option value="" selected="@(string.IsNullOrEmpty(selectedCategory) ? "selected" : null)">-- All Category --</option>
             @foreach (var category in (SelectList)ViewBag.Categories)
             {
-                <option value="@category.Value">@category.Text</option>
-            }
+                <option value="@category.Value" selected="@(category.Value == selectedCategory ? "selected" : null)">
+                    @category.Text
+                </option>
+             }
         </select>
     </form>
 }

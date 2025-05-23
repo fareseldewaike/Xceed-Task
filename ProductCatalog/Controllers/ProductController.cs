@@ -168,12 +168,14 @@ namespace ProductCatalog.Controllers
             }
         }
         [HttpGet]
-        public async Task<IActionResult> FilterAllByCategory(int categoryid)
+        public async Task<IActionResult> FilterAllByCategory(int? categoryid)
         {
             try
             {
                 await AllCategoriesAsync();
-                var products = await _productService.GetProductsByCategoryAsync(categoryid);
+                var products = categoryid.HasValue
+                    ? await _productService.GetProductsByCategoryAsync(categoryid.Value)
+                    : await _productService.GetAllProductsAsync();
                 return View("GetAllProducts", products);
             }
             catch (Exception)
@@ -182,12 +184,15 @@ namespace ProductCatalog.Controllers
             }
         }
         [HttpGet]
-        public async Task<IActionResult> FilterOfferedByCategory(int categoryid)
+        public async Task<IActionResult> FilterOfferedByCategory(int? categoryid)
         {
             try
             {
                 await AllCategoriesAsync();
-                var products = await _productService.GetProductsByCategoryStillInOfferAsync(categoryid);
+                var products = categoryid.HasValue ?
+                    await _productService.GetProductsByCategoryStillInOfferAsync(categoryid.Value)
+                    : await _productService.GetAllProductsWithStillInOfferAsync();
+                ;
                 return View("GetAllProductsWithStillInOffer", products);
             }
             catch (Exception)

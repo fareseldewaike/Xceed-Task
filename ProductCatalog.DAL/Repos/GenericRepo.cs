@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using ProductCatalog.BLL.Specification;
 using ProductCatalog.DAL.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -54,5 +55,21 @@ namespace ProductCatalog.DAL.Repos
             return await _DbSet.Where(predicate).ToListAsync() ;
         }
 
+        public async Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecification<T> specification)
+        {
+            return await ApplySpecification(specification);
+        }
+
+        public async Task<T> GetWithSpecAsync(ISpecification<T> specification)
+        {
+            var query = SpecificationEvaluator.GetQuery(_DbSet.AsQueryable(), specification);
+            return await query.FirstOrDefaultAsync();
+        }
+        private async Task<IReadOnlyList<T>> ApplySpecification(ISpecification<T> spec)
+        {
+            var query = _DbSet.AsQueryable();
+            query = SpecificationEvaluator.GetQuery<T>(query, spec);
+            return query.ToList();
+        }
     }
 }

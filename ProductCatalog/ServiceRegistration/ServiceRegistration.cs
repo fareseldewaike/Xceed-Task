@@ -11,7 +11,13 @@ namespace ProductCatalog.ServiceRegistration
             services.AddDbContext<ProductCatalogDbContext>(options =>
                       options.UseLazyLoadingProxies().UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<IdentityUser, IdentityRole>(
+                //options =>
+                //{
+                //    options.User.AllowedUserNameCharacters =
+                //         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
+                //}
+                )
                 .AddEntityFrameworkStores<ProductCatalogDbContext>()
                 .AddDefaultTokenProviders();
 

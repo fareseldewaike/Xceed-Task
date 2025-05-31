@@ -4,11 +4,11 @@ namespace ProductCatalog.ViewModels
 {
     public class LoginViewModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "please enter valid email")]
+        [EmailAddress(ErrorMessage ="please enter valid email")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "please enter valid password")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 

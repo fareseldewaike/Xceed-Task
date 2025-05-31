@@ -12,3 +12,4 @@ C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\re
 C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.pdb
 C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.genruntimeconfig.cache
 C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ref\ProductCatalog.DAL.dll
+C:\Users\USER\source\repos\ProductCatalog\ProductCatalog.DAL\obj\Debug\net9.0\ProductCatalog.DAL.sourcelink.json

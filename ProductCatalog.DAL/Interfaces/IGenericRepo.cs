@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductCatalog.BLL.Specification;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -11,6 +12,8 @@ namespace ProductCatalog.DAL.Interfaces
     {
         Task<T> GetByIdAsync(int id) ;
         Task<IReadOnlyList<T>> GetAllAsync();
+        Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecification<T> specification);
+        Task<T> GetWithSpecAsync(ISpecification<T> specification);
         Task<IReadOnlyList<T>> GetAllWithSpecAsync(Expression<Func<T, bool>> predicate);
         Task AddAsync(T entity) ;
         Task UpdateAsync(T entity) ;
